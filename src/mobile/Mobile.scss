@@ -1,0 +1,100 @@
+.mobile {
+  width: 375px;
+  font-family: Poppins;
+  background-color: white;
+  .header {
+    .displayUp {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 20px;
+      align-items: center;
+      margin-bottom: 10px;
+      p {
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 22.5px;
+      }
+      img {
+        padding: 3px;
+      }
+    }
+    .welcome {
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .pWelcome {
+        p {
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 21px;
+          color: #d8d8d8;
+        }
+        span {
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 27px;
+          color: #001833;
+        }
+      }
+      .shopWelcome {
+        img {
+          padding: 10px;
+        }
+      }
+    }
+  }
+  .main {
+    background-color: #324a59;
+    border-radius: 25px 25px 0px 0px;
+    padding: 20px;
+    .mainChoose {
+      p {
+        color: #d8d8d8;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+      }
+    }
+    .wrapperChoose {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-bottom: 5px;
+      .item1,
+      .item2,
+      .item3,
+      .item4,
+      .item5,
+      .item6 {
+        width: 154px;
+        height: 164px;
+        background-color: #f7f8fb;
+        margin: 5px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        border-radius: 15px;
+        p {
+          color: #001833;
+          padding-top: 10px;
+        }
+      }
+      .item5 {
+        p {
+          padding-top: 20px;
+        }
+      }
+    }
+    .wrapperNav {
+      width: 100%;
+      background-color: white;
+      border-radius: 15px;
+      display: flex;
+      justify-content: space-around;
+      padding: 20px;
+    }
+  }
+}
