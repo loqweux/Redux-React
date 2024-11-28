@@ -3,41 +3,25 @@ import { useDispatch } from "react-redux";
 import { Routes, Route } from "react-router-dom";
 import { setData } from "../store/slice";
 import Mobile from "../mobile/Mobile";
-import CoffeePage from "../pages/CoffePage";
-import DessertPage from "../pages/DesertsPage";
-import SnackPage from "../pages/SnakPage";
+import Order from "../order/Order";
+import Basket from "../basket/Basket";
 import "./App.css";
 
 function App() {
   const dispatch = useDispatch();
-
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const responses = await Promise.all([
-          fetch("http://localhost:5000/coffees"),
-          fetch("http://localhost:5000/desserts"),
-          fetch("http://localhost:5000/snacks"),
-        ]);
-        if (!responses.every((response) => response.ok)) {
-          throw new Error("One or more network responses were not ok.");
+        const response = await fetch("http://localhost:5000/coffees");
+        if (!response.ok) {
+          throw new Error("Network response was not ok.");
         }
-
-        const [coffees, desserts, snacks] = await Promise.all(
-          responses.map((response) => response.json())
-        );
-        dispatch(
-          setData({
-            coffees,
-            desserts,
-            snacks,
-          })
-        );
+        const coffees = await response.json();
+        dispatch(setData({ coffees }));
       } catch (error) {
         console.error("Error fetching data: ", error);
       }
     };
-
     fetchData();
   }, [dispatch]);
 
@@ -45,9 +29,8 @@ function App() {
     <div className="app">
       <Routes>
         <Route path="/" element={<Mobile />} />
-        <Route path="/coffees" element={<CoffeePage />} />
-        <Route path="/desserts" element={<DessertPage />} />
-        <Route path="/snacks" element={<SnackPage />} />
+        <Route path="/order/:coffeeId" element={<Order />} />
+        <Route path="/basket" element={<Basket />} />
       </Routes>
     </div>
   );

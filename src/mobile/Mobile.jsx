@@ -8,7 +8,7 @@ import man from "../../public/mobile/Profile.svg";
 import MobileMain from "./main/MobileMain";
 import "./Mobile.scss";
 
-function Mobile(props) {
+function Mobile() {
   return (
     <div className="mobile">
       <div className="header">
@@ -26,23 +26,14 @@ function Mobile(props) {
             <span>Alex</span>
           </div>
           <div className="shopWelcome">
-            <img src={buy} alt="buy" />
+            <NavLink to="/basket">
+              <img src={buy} alt="buy" />
+            </NavLink>
             <img src={man} alt="man" />
           </div>
         </div>
       </div>
       <MobileMain />
-      <div className="navigation">
-        <NavLink to="/coffees" activeClassName="active-link">
-          Coffees
-        </NavLink>
-        <NavLink to="/desserts" activeClassName="active-link">
-          Desserts
-        </NavLink>
-        <NavLink to="/snacks" activeClassName="active-link">
-          Snacks
-        </NavLink>
-      </div>
     </div>
   );
 }

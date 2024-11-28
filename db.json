@@ -3,77 +3,74 @@
     {
       "id": 1,
       "name": "Americano",
-      "image": "./public/mobile/coffe/americano.png"
+      "image": "./public/mobile/coffe/americano.png",
+      "defaultVolume": 250,
+      "defaultQuantity": 1,
+      "defaultRistretto": "One",
+      "defaultTakeaway": "Onsite",
+      "price": 3
     },
     {
       "id": 2,
       "name": "Cappuccino",
-      "image": "./public/mobile/coffe/cappuccino.png"
+      "image": "./public/mobile/coffe/Cappuccino.png",
+      "defaultVolume": 350,
+      "defaultQuantity": 1,
+      "defaultRistretto": "One",
+      "defaultTakeaway": "Onsite",
+      "price": 3.5
     },
-    { "id": 3, "name": "Latte", "image": "./public/mobile/coffe/Latte.png" },
+    {
+      "id": 3,
+      "name": "Latte",
+      "image": "./public/mobile/coffe/Latte.png",
+      "defaultVolume": 250,
+      "defaultQuantity": 1,
+      "defaultRistretto": "One",
+      "defaultTakeaway": "Onsite",
+      "price": 3.2
+    },
     {
       "id": 4,
       "name": "Flat White",
-      "image": "./public/mobile/coffe/flatwhite.png"
+      "image": "./public/mobile/coffe/flatwhite.png",
+      "defaultVolume": 350,
+      "defaultQuantity": 1,
+      "defaultRistretto": "One",
+      "defaultTakeaway": "Onsite",
+      "price": 3.8
     },
     {
       "id": 5,
       "name": "Espresso",
-      "image": "./public/mobile/coffe/espresso.png"
+      "image": "./public/mobile/coffe/espresso.png",
+      "defaultVolume": 250,
+      "defaultQuantity": 1,
+      "defaultRistretto": "One",
+      "defaultTakeaway": "Onsite",
+      "price": 2.5
     }
   ],
-  "desserts": [
+  "basket": [
     {
-      "id": 1,
-      "name": "Cake",
-      "image": "https://images.rawpixel.com/image_png_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDI0LTA3L3Jhd3BpeGVsX29mZmljZV8zMV9iaXJ0aGRheV9jaG9jb2xhdGVfY2FrZV9jdXRlXzNkX2lzb2xhdGVkX29uX18zMjNiYWI1Yy1hZmMwLTQ3NmYtYWQyMi1lZGIzYzA5MDhiNzEucG5n.png"
+      "id": "3ed5",
+      "name": "Latte",
+      "image": "./public/mobile/coffe/Latte.png",
+      "price": 3.2,
+      "quantity": 1,
+      "ristretto": "One",
+      "takeaway": "Onsite",
+      "volume": 250
     },
     {
-      "id": 2,
-      "name": "Pie",
-      "image": "https://image.similarpng.com/very-thumbnail/2020/09/Tasty-Cherry-pie--on-transparent-background-PNG.png"
-    },
-    {
-      "id": 3,
-      "name": "Brownie",
-      "image": "https://w7.pngwing.com/pngs/602/553/png-transparent-two-chocolate-brownies-fudge-cake-chocolate-brownie-milk-bakery-chocolate-brownies-recipe-frozen-dessert-cake-thumbnail.png"
-    },
-    {
-      "id": 4,
-      "name": "Cookies",
-      "image": "https://e7.pngegg.com/pngimages/170/188/png-clipart-web-page-http-cookie-biscuits-world-wide-web-computer-file-world-wide-web-brown-food.png"
-    },
-    {
-      "id": 5,
-      "name": "Muffin",
-      "image": "https://e7.pngegg.com/pngimages/142/508/png-clipart-muffins-with-chocolate-toppings-muffin-bakery-chocolate-cake-chocolate-brownie-banana-bread-muffin-baked-goods-food-thumbnail.png"
-    }
-  ],
-  "snacks": [
-    {
-      "id": 1,
-      "name": "Chips",
-      "image": "https://w7.pngwing.com/pngs/108/695/png-transparent-pringles-chip-can-beer-pringles-potato-chip-barbecue-junk-food-chips-packet-food-recipe-packaging-and-labeling-thumbnail.png"
-    },
-    {
-      "id": 2,
-      "name": "Nuts",
-      "image": "https://png.pngtree.com/png-clipart/20190911/ourmid/pngtree-group-of-almonds-and-cashew-nuts-png-background-png-image_1729179.jpg"
-    },
-    {
-      "id": 3,
-      "name": "Popcorn",
-      "image": "https://e7.pngegg.com/pngimages/410/696/png-clipart-popcorn-popcorn-thumbnail.png"
-    },
-    {
-      "id": 4,
-      "name": "Pretzels",
-      "image": "https://e7.pngegg.com/pngimages/3/17/png-clipart-knot-bread-pretzel-with-salt-food-pretzels-thumbnail.png"
-    },
-    {
-      "id": 5,
-      "name": "Cheese",
-      "image": "https://e7.pngegg.com/pngimages/254/955/png-clipart-gruyere-cheese-cheesecake-swiss-cheese-cheese-cheese-slice-food-cheese-thumbnail.png"
+      "id": "14f1",
+      "name": "Cappuccino",
+      "image": "./public/mobile/coffe/Cappuccino.png",
+      "price": 3.5,
+      "quantity": 1,
+      "ristretto": "One",
+      "takeaway": "Onsite",
+      "volume": 350
     }
   ]
 }
